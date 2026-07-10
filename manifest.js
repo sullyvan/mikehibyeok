@@ -272,7 +272,7 @@ window.WORKS = [
     "title": "MSU Judge",
     "date": "2026-07-04",
     "series": "MSU",
-    "process": "ai"
+    "process": "hybrid"
   },
   {
     "file": "images/2026-07-04-node-frootloop.jpg",
