@@ -1,0 +1,312 @@
+window.WORKS = [
+  {
+    "file": "images/2026-07-09-lacma-data.jpg",
+    "type": "image",
+    "title": "LACMA Data",
+    "date": "2026-07-09",
+    "series": "LACMA",
+    "process": "ai"
+  },
+  {
+    "file": "",
+    "youtube": "AWx4d1gxjdw",
+    "type": "video",
+    "title": "Infinite Loop: Birds on a Wire",
+    "date": "2026-07-09",
+    "series": "Infinite Loop",
+    "process": "ai"
+  },
+  {
+    "file": "",
+    "youtube": "79THSdrSl04",
+    "type": "video",
+    "title": "Infinite Loop: Drones Drop Boxes",
+    "date": "2026-07-09",
+    "series": "Infinite Loop",
+    "process": "ai"
+  },
+  {
+    "file": "",
+    "youtube": "3sDu7YZajOg",
+    "type": "video",
+    "title": "Emerging Space and Time",
+    "date": "2026-07-09",
+    "series": "EAAS",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-ai-slop.jpg",
+    "type": "image",
+    "title": "AI Slop",
+    "date": "2026-07-04",
+    "series": "AI Slop",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-ai-sloppification.jpg",
+    "type": "image",
+    "title": "AI Sloppification",
+    "date": "2026-07-04",
+    "series": "AI Slop",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-ai-sloppixel.jpg",
+    "type": "image",
+    "title": "AI Sloppixel",
+    "date": "2026-07-04",
+    "series": "AI Slop",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-aislop-logo.jpg",
+    "type": "image",
+    "title": "Aislop Logo",
+    "date": "2026-07-04",
+    "series": "AI Slop",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-bio-diverse1.jpg",
+    "type": "image",
+    "title": "Bio Diverse 1",
+    "date": "2026-07-04",
+    "series": "Bio Diverse",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-bio-diverse2.jpg",
+    "type": "image",
+    "title": "Bio Diverse 2",
+    "date": "2026-07-04",
+    "series": "Bio Diverse",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-bio-diverse3.jpg",
+    "type": "image",
+    "title": "Bio Diverse 3",
+    "date": "2026-07-04",
+    "series": "Bio Diverse",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-bio-diverse4.jpg",
+    "type": "image",
+    "title": "Bio Diverse 4",
+    "date": "2026-07-04",
+    "series": "Bio Diverse",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-comic-kwame.jpg",
+    "type": "image",
+    "title": "Comic Kwame",
+    "date": "2026-07-04",
+    "series": "Comics",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-eaas-bus.jpg",
+    "type": "image",
+    "title": "EAAS Bus",
+    "date": "2026-07-04",
+    "series": "EAAS",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-eaas-butter.jpg",
+    "type": "image",
+    "title": "EAAS Butter",
+    "date": "2026-07-04",
+    "series": "EAAS",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-eaas-deepspace.jpg",
+    "type": "image",
+    "title": "EAAS Deepspace",
+    "date": "2026-07-04",
+    "series": "EAAS",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-eaas-display.jpg",
+    "type": "image",
+    "title": "EAAS Display",
+    "date": "2026-07-04",
+    "series": "EAAS",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-eaas-god.jpg",
+    "type": "image",
+    "title": "EAAS God",
+    "date": "2026-07-04",
+    "series": "EAAS",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-eaas-goddess.jpg",
+    "type": "image",
+    "title": "EAAS Goddess",
+    "date": "2026-07-04",
+    "series": "EAAS",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-eaas-guide.jpg",
+    "type": "image",
+    "title": "EAAS Guide",
+    "date": "2026-07-04",
+    "series": "EAAS",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-eaas-soup.jpg",
+    "type": "image",
+    "title": "EAAS Soup",
+    "date": "2026-07-04",
+    "series": "EAAS",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-eaas-spacecans.jpg",
+    "type": "image",
+    "title": "EAAS Spacecans",
+    "date": "2026-07-04",
+    "series": "EAAS",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-eaas-spacetime.jpg",
+    "type": "image",
+    "title": "EAAS Spacetime",
+    "date": "2026-07-04",
+    "series": "EAAS",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-frootloop-wall.jpg",
+    "type": "image",
+    "title": "Frootloop Wall",
+    "date": "2026-07-04",
+    "series": "Frootloop",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-hair-defeat.jpg",
+    "type": "image",
+    "title": "Hair Defeat",
+    "date": "2026-07-04",
+    "series": "Hair",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-hair-defeatgreen.jpg",
+    "type": "image",
+    "title": "Hair Defeatgreen",
+    "date": "2026-07-04",
+    "series": "Hair",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-impasto-iphone1.jpg",
+    "type": "image",
+    "title": "Impasto iPhone 1",
+    "date": "2026-07-04",
+    "series": "Impasto",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-impasto-iphone2.jpg",
+    "type": "image",
+    "title": "Impasto iPhone 2",
+    "date": "2026-07-04",
+    "series": "Impasto",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-impasto-iphone3.jpg",
+    "type": "image",
+    "title": "Impasto iPhone 3",
+    "date": "2026-07-04",
+    "series": "Impasto",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-infinite-frootpower.jpg",
+    "type": "image",
+    "title": "Infinite Frootpower",
+    "date": "2026-07-04",
+    "series": "Frootloop",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-joejim-slop.jpg",
+    "type": "image",
+    "title": "Joejim Slop",
+    "date": "2026-07-04",
+    "series": "AI Slop",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-lacma-birdseye.jpg",
+    "type": "image",
+    "title": "LACMA Birdseye",
+    "date": "2026-07-04",
+    "series": "LACMA",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-lacma-discrete.jpg",
+    "type": "image",
+    "title": "LACMA Discrete",
+    "date": "2026-07-04",
+    "series": "LACMA",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-msu-judge.jpg",
+    "type": "image",
+    "title": "MSU Judge",
+    "date": "2026-07-04",
+    "series": "MSU",
+    "process": "ai"
+  },
+  {
+    "file": "images/2026-07-04-node-frootloop.jpg",
+    "type": "image",
+    "title": "Node Frootloop",
+    "date": "2026-07-04",
+    "series": "Frootloop",
+    "process": "ai"
+  },
+  {
+    "file": "",
+    "youtube": "v1FSCsj6LQk",
+    "type": "video",
+    "title": "Frootloop Rollercoaster",
+    "date": "2026-07-04",
+    "series": "Frootloop",
+    "process": "ai"
+  },
+  {
+    "file": "",
+    "youtube": "kg5xyDKZtbY",
+    "type": "video",
+    "title": "Frootloop Rollercoaster at the Node",
+    "date": "2026-07-04",
+    "series": "Frootloop",
+    "process": "ai"
+  },
+  {
+    "file": "",
+    "youtube": "mvPmOY5q8oc",
+    "type": "video",
+    "title": "Froot Loop Roller Coaster (Short)",
+    "date": "2026-07-04",
+    "series": "Frootloop",
+    "process": "ai"
+  }
+];
