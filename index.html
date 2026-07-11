@@ -173,10 +173,20 @@
 
 <div class="section-head" id="about">About</div>
 <div class="about">
-  <p>MIKEHIBYEOK is Michael Sullivan — making images and video with AI workflows,
-  by hand, and everything in between. Each piece is tagged with how it was made.
-  This site is the running archive.</p>
-  <p style="margin-top:14px">Contact: <a href="mailto:sullivan.d.mike@gmail.com">sullivan.d.mike@gmail.com</a></p>
+  <p>MIKEHIBYEOK is Michael Sullivan. Detroit.</p>
+  <p style="margin-top:14px">He makes digital art, AI-assisted images, video, and mixed media.
+  Some of it is slop. Some of it isn't. The filter tags at the top tell you which is which —
+  or at least, what series it belongs to.</p>
+  <p style="margin-top:14px">At the center of it all: a self-portrait photography series focused on hair,
+  now 10 years and counting.</p>
+  <p style="margin-top:14px">Selected exhibitions: shown as part of BEEPLE: INFINITE_LOOP — an immersive
+  mid-career survey at Node Gallery, Palo Alto (2026); selected for Shepard Fairey: Obey &amp; Resist at
+  Beeple Studios, Charleston (2026); Portrait: Self and Others, PhotoPlace Gallery, juried by
+  Aline Smithson (2024); A Celebration of Biodiversity, Insecta Collective CIC, Leicester, UK (2026).</p>
+  <p style="margin-top:14px">He treats AI as a visible tool, not a hidden one. The process is part of the work.</p>
+  <p style="margin-top:14px">This site is the running archive. Newest first. Everything labeled.</p>
+  <p style="margin-top:14px">Contact: <a href="mailto:sullivan.d.mike@gmail.com">sullivan.d.mike@gmail.com</a><br>
+  Instagram: <a href="https://www.instagram.com/mikehibyeok/" target="_blank" rel="noopener">@mikehibyeok</a></p>
 </div>
 
 <footer>© 2026 MIKEHIBYEOK · ALL SLOP RESERVED</footer>
@@ -257,12 +267,17 @@
     document.getElementById('lbSub').innerHTML =
       `${w.date} &nbsp;·&nbsp; ${w.series} &nbsp;·&nbsp; <b>${w.process.toUpperCase()}</b>`;
   }
+  function trackView(w) {
+    if (window.goatcounter && window.goatcounter.count)
+      window.goatcounter.count({ path: 'artwork/' + w.file.replace(/^.*\//, ''), title: w.title, event: true });
+  }
   function openLightbox(i) {
     current = i;
     const w = visible[i];
     lbMedia.innerHTML = `<img src="${w.file}" alt="${w.title}">`;
     fillMeta(w);
     lb.classList.add('open');
+    trackView(w);
   }
   function openVideoLightbox(w) {
     current = -1;
@@ -271,6 +286,7 @@
       : `<video src="${w.file}" controls autoplay></video>`;
     fillMeta(w);
     lb.classList.add('open');
+    trackView(w);
   }
   function step(d) {
     if (current < 0) return;
@@ -291,5 +307,7 @@
     if (e.key === 'ArrowRight') step(1);
   });
 </script>
+<script data-goatcounter="https://sullyvan.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
