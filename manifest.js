@@ -308,5 +308,13 @@ window.WORKS = [
     "date": "2026-07-04",
     "series": "Frootloop",
     "process": "ai"
+  },
+  {
+    "file": "images/2024-04-19-selfportrait-overpass.jpg",
+    "type": "image",
+    "title": "Self Portrait: Overpass",
+    "date": "2024-04-19",
+    "series": "Hair",
+    "process": "handmade"
   }
 ];
