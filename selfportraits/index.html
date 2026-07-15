@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MIKEHIBYEOK</title>
-<meta name="description" content="MIKEHIBYEOK — art of various quality. Some handmade, a lot with AI workflows.">
+<title>SELF PORTRAITS — MIKEHIBYEOK</title>
+<meta name="description" content="The self-portrait archive. A daily photography practice focused on hair, 2014 to now.">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   :root {
@@ -64,17 +64,17 @@
   /* ---------- grid ---------- */
   .grid {
     display: grid; gap: 4px; padding: 16px 24px 60px;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   }
   .tile {
     position: relative; aspect-ratio: 1/1; overflow: hidden;
     background: var(--panel); cursor: pointer; border: 0; padding: 0;
   }
-  .tile img, .tile video {
+  .tile img {
     width: 100%; height: 100%; object-fit: cover; display: block;
     transition: transform .25s ease;
   }
-  .tile:hover img, .tile:hover video { transform: scale(1.05); }
+  .tile:hover img { transform: scale(1.05); }
   .tile .label {
     position: absolute; inset: auto 0 0 0;
     background: linear-gradient(transparent, rgba(0,0,0,.85));
@@ -83,24 +83,6 @@
     padding: 26px 10px 8px; opacity: 0; transition: opacity .2s;
   }
   .tile:hover .label { opacity: 1; }
-  .tile .play {
-    position: absolute; top: 8px; right: 8px;
-    background: var(--accent); color: #000;
-    font-size: 10px; font-weight: 900; letter-spacing: .1em;
-    padding: 4px 8px;
-  }
-
-  /* ---------- section headings ---------- */
-  .section-head {
-    padding: 40px 24px 4px; font-size: 13px; font-weight: 900;
-    letter-spacing: .3em; color: var(--dim); text-transform: uppercase;
-  }
-  .section-head::before { content: "// "; color: var(--accent); }
-
-  /* ---------- about ---------- */
-  .about { padding: 16px 24px 90px; max-width: 720px; color: #bbb; font-size: 15px; line-height: 1.7; }
-  .about a { color: var(--accent); text-decoration: none; }
-  .about a:hover { text-decoration: underline; }
 
   footer {
     border-top: 1px solid #222; color: #555;
@@ -117,16 +99,10 @@
     padding: 24px;
   }
   .lightbox.open { display: flex; }
-  .lightbox img, .lightbox video {
-    max-width: 92vw; max-height: 78vh; object-fit: contain;
-  }
-  .lightbox iframe {
-    width: min(92vw, 1100px); aspect-ratio: 16/9; max-height: 78vh; border: 0;
-  }
+  .lightbox img { max-width: 92vw; max-height: 78vh; object-fit: contain; }
   .lb-meta { margin-top: 16px; text-align: center; }
   .lb-title { font-size: 16px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
   .lb-sub { color: var(--dim); font-size: 12px; letter-spacing: .1em; margin-top: 6px; text-transform: uppercase; }
-  .lb-sub b { color: var(--accent); font-weight: 700; }
   .lb-btn {
     position: absolute; top: 50%; transform: translateY(-50%);
     background: none; border: none; color: var(--dim);
@@ -142,7 +118,7 @@
   #lbClose:hover { color: var(--accent); }
 
   @media (max-width: 640px) {
-    .grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); padding: 12px 12px 40px; }
+    .grid { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); padding: 12px 12px 40px; }
     nav a { margin-left: 14px; }
     .lb-btn { font-size: 30px; padding: 10px; }
   }
@@ -151,44 +127,22 @@
 <body>
 
 <header>
-  <a class="wordmark" href="#top">MIKEHI<span>BYEOK</span></a>
+  <a class="wordmark" href="../">MIKEHI<span>BYEOK</span></a>
   <nav>
-    <a href="#work">WORK</a>
-    <a href="selfportraits/">SELF PORTRAITS</a>
-    <a href="#video">VIDEO</a>
-    <a href="#about">ABOUT</a>
+    <a href="../#work">WORK</a>
+    <a href="../#video">VIDEO</a>
+    <a href="../#about">ABOUT</a>
   </nav>
 </header>
 
 <div class="intro" id="top">
-  <h1>Art of various quality.<br>Some handmade. <em>A lot of AI slop.</em></h1>
-  <p>An accumulating archive. Newest first. Everything labeled.</p>
+  <h1>Self portraits.<br><em>Ten years of hair.</em></h1>
+  <p id="statline">A daily practice since 2014. Newest first.</p>
 </div>
 
 <div class="filters" id="filters"></div>
 
 <div class="grid" id="grid"></div>
-
-<div class="section-head" id="video">Video</div>
-<div class="grid" id="videoGrid" style="grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));"></div>
-
-<div class="section-head" id="about">About</div>
-<div class="about">
-  <p>MIKEHIBYEOK is Michael Sullivan. Detroit.</p>
-  <p style="margin-top:14px">He makes digital art, AI-assisted images, video, and mixed media.
-  Some of it is slop. Some of it isn't. The filter tags at the top tell you which is which —
-  or at least, what series it belongs to.</p>
-  <p style="margin-top:14px">At the center of it all: <a href="selfportraits/">a self-portrait photography
-  series focused on hair</a>, now 10 years and counting. The full archive is here on the site.</p>
-  <p style="margin-top:14px">Selected exhibitions: shown as part of BEEPLE: INFINITE_LOOP — an immersive
-  mid-career survey at Node Gallery, Palo Alto (2026); selected for Shepard Fairey: Obey &amp; Resist at
-  Beeple Studios, Charleston (2026); Portrait: Self and Others, PhotoPlace Gallery, juried by
-  Aline Smithson (2024); A Celebration of Biodiversity, Insecta Collective CIC, Leicester, UK (2026).</p>
-  <p style="margin-top:14px">He treats AI as a visible tool, not a hidden one. The process is part of the work.</p>
-  <p style="margin-top:14px">This site is the running archive. Newest first. Everything labeled.</p>
-  <p style="margin-top:14px">Contact: <a href="mailto:sullivan.d.mike@gmail.com">sullivan.d.mike@gmail.com</a><br>
-  Instagram: <a href="https://www.instagram.com/mikehibyeok/" target="_blank" rel="noopener">@mikehibyeok</a></p>
-</div>
 
 <footer>© 2026 MIKEHIBYEOK · ALL SLOP RESERVED</footer>
 
@@ -203,91 +157,59 @@
   <button class="lb-btn" id="lbNext" aria-label="Next">›</button>
 </div>
 
-<script src="manifest.js"></script>
+<script src="sp_manifest.js"></script>
 <script>
-  const works = window.WORKS || [];
-  const images = works.filter(w => w.type === 'image');
-  const videos = works.filter(w => w.type === 'video');
+  const works = window.SP || [];
+  document.getElementById('statline').textContent =
+    `${works.length} self-portraits, ${works[works.length-1].date.slice(0,4)}–${works[0].date.slice(0,4)}. A daily practice. Newest first.`;
 
-  // --- filters ---
-  const seriesList = ['ALL', ...new Set(images.map(w => w.series))];
+  // --- year filters ---
+  const years = ['ALL', ...new Set(works.map(w => String(w.year)))];
   const filtersEl = document.getElementById('filters');
-  let activeSeries = 'ALL';
-  seriesList.forEach(s => {
+  let activeYear = 'ALL';
+  years.forEach(y => {
     const b = document.createElement('button');
-    b.className = 'chip' + (s === 'ALL' ? ' active' : '');
-    b.textContent = s;
+    b.className = 'chip' + (y === 'ALL' ? ' active' : '');
+    b.textContent = y;
     b.onclick = () => {
-      activeSeries = s;
+      activeYear = y;
       document.querySelectorAll('.chip').forEach(c => c.classList.toggle('active', c === b));
       renderGrid();
     };
     filtersEl.appendChild(b);
   });
 
-  // --- image grid ---
+  // --- grid ---
   const gridEl = document.getElementById('grid');
   let visible = [];
   function renderGrid() {
-    visible = activeSeries === 'ALL' ? images : images.filter(w => w.series === activeSeries);
+    visible = activeYear === 'ALL' ? works : works.filter(w => String(w.year) === activeYear);
     gridEl.innerHTML = '';
     visible.forEach((w, i) => {
       const t = document.createElement('button');
       t.className = 'tile';
       t.innerHTML = `<img src="${w.file}" alt="${w.title}" loading="lazy">
-                     <div class="label">${w.title}</div>`;
+                     <div class="label">${w.date}</div>`;
       t.onclick = () => openLightbox(i);
       gridEl.appendChild(t);
     });
   }
   renderGrid();
 
-  // --- video grid ---
-  const videoGridEl = document.getElementById('videoGrid');
-  videos.forEach(w => {
-    const t = document.createElement('div');
-    t.className = 'tile';
-    t.style.aspectRatio = '16/9';
-    const thumb = w.youtube
-      ? `<img src="https://i.ytimg.com/vi/${w.youtube}/hqdefault.jpg" alt="${w.title}">`
-      : `<video src="${w.file}" muted preload="metadata"></video>`;
-    t.innerHTML = `${thumb}
-                   <div class="play">▶ PLAY</div>
-                   <div class="label">${w.title}</div>`;
-    t.onclick = () => openVideoLightbox(w);
-    videoGridEl.appendChild(t);
-  });
-
   // --- lightbox ---
   const lb = document.getElementById('lightbox');
   const lbMedia = document.getElementById('lbMedia');
   let current = -1;
 
-  function fillMeta(w) {
-    document.getElementById('lbTitle').textContent = w.title;
-    document.getElementById('lbSub').innerHTML =
-      `${w.date} &nbsp;·&nbsp; ${w.series} &nbsp;·&nbsp; <b>${w.process.toUpperCase()}</b>`;
-  }
-  function trackView(w) {
-    if (window.goatcounter && window.goatcounter.count)
-      window.goatcounter.count({ path: 'artwork/' + w.file.replace(/^.*\//, ''), title: w.title, event: true });
-  }
   function openLightbox(i) {
     current = i;
     const w = visible[i];
     lbMedia.innerHTML = `<img src="${w.file}" alt="${w.title}">`;
-    fillMeta(w);
+    document.getElementById('lbTitle').textContent = w.title;
+    document.getElementById('lbSub').textContent = w.date;
     lb.classList.add('open');
-    trackView(w);
-  }
-  function openVideoLightbox(w) {
-    current = -1;
-    lbMedia.innerHTML = w.youtube
-      ? `<iframe src="https://www.youtube.com/embed/${w.youtube}?autoplay=1" allow="autoplay; fullscreen" allowfullscreen></iframe>`
-      : `<video src="${w.file}" controls autoplay></video>`;
-    fillMeta(w);
-    lb.classList.add('open');
-    trackView(w);
+    if (window.goatcounter && window.goatcounter.count)
+      window.goatcounter.count({ path: 'selfportrait/' + w.file.replace(/^.*\//, ''), title: w.title, event: true });
   }
   function step(d) {
     if (current < 0) return;
