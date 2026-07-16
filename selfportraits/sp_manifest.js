@@ -4908,6 +4908,12 @@ window.SP = [
   "title": "Self Portrait Blue On Rouge"
  },
  {
+  "file": "2016/2016-09-14_self_portrait.jpg",
+  "date": "2016-09-14",
+  "year": 2016,
+  "title": "Self Portrait"
+ },
+ {
   "file": "2016/2016-09-09_self_portrait_friday_night_lights_grovesathletics.jpg",
   "date": "2016-09-09",
   "year": 2016,
@@ -4924,6 +4930,24 @@ window.SP = [
   "date": "2016-09-08",
   "year": 2016,
   "title": "Self Portrait Windy Day"
+ },
+ {
+  "file": "2016/2016-09-05_self_portrait.jpg",
+  "date": "2016-09-05",
+  "year": 2016,
+  "title": "Self Portrait"
+ },
+ {
+  "file": "2016/2016-09-02_self_portrait.jpg",
+  "date": "2016-09-02",
+  "year": 2016,
+  "title": "Self Portrait"
+ },
+ {
+  "file": "2016/2016-08-31_self_portrait.jpg",
+  "date": "2016-08-31",
+  "year": 2016,
+  "title": "Self Portrait"
  },
  {
   "file": "2016/2016-08-26_self_portrait.jpg",
@@ -4962,6 +4986,12 @@ window.SP = [
   "title": "Self Portrait Geo Institut Globe"
  },
  {
+  "file": "2016/2016-08-17_self_portrait_4.jpg",
+  "date": "2016-08-17",
+  "year": 2016,
+  "title": "Self Portrait 4"
+ },
+ {
   "file": "2016/2016-08-17_self_portrait_beauty_supply.jpg",
   "date": "2016-08-17",
   "year": 2016,
@@ -4986,10 +5016,22 @@ window.SP = [
   "title": "Self Portrait Urgent Care Water Cooler"
  },
  {
+  "file": "2016/2016-08-06_self_portrait_2.jpg",
+  "date": "2016-08-06",
+  "year": 2016,
+  "title": "Self Portrait 2"
+ },
+ {
   "file": "2016/2016-08-06_self_portrait_back_seat_driving.jpg",
   "date": "2016-08-06",
   "year": 2016,
   "title": "Self Portrait Back Seat Driving"
+ },
+ {
+  "file": "2016/2016-08-05_self_portrait_2.jpg",
+  "date": "2016-08-05",
+  "year": 2016,
+  "title": "Self Portrait 2"
  },
  {
   "file": "2016/2016-08-05_self_portrait_at_rest.jpg",
@@ -5448,6 +5490,54 @@ window.SP = [
   "title": "Self Portrait Lake"
  },
  {
+  "file": "2015/2015-10-30_self_portrait_20.jpg",
+  "date": "2015-10-30",
+  "year": 2015,
+  "title": "Self Portrait 20"
+ },
+ {
+  "file": "2015/2015-10-30_self_portrait_22.jpg",
+  "date": "2015-10-30",
+  "year": 2015,
+  "title": "Self Portrait 22"
+ },
+ {
+  "file": "2015/2015-10-30_self_portrait_24.jpg",
+  "date": "2015-10-30",
+  "year": 2015,
+  "title": "Self Portrait 24"
+ },
+ {
+  "file": "2015/2015-10-30_self_portrait_26.jpg",
+  "date": "2015-10-30",
+  "year": 2015,
+  "title": "Self Portrait 26"
+ },
+ {
+  "file": "2015/2015-10-30_self_portrait_28.jpg",
+  "date": "2015-10-30",
+  "year": 2015,
+  "title": "Self Portrait 28"
+ },
+ {
+  "file": "2015/2015-10-30_self_portrait_30.jpg",
+  "date": "2015-10-30",
+  "year": 2015,
+  "title": "Self Portrait 30"
+ },
+ {
+  "file": "2015/2015-10-30_self_portrait_32.jpg",
+  "date": "2015-10-30",
+  "year": 2015,
+  "title": "Self Portrait 32"
+ },
+ {
+  "file": "2015/2015-10-30_self_portrait_34.jpg",
+  "date": "2015-10-30",
+  "year": 2015,
+  "title": "Self Portrait 34"
+ },
+ {
   "file": "2015/2015-10-30_self_portrait_door.jpg",
   "date": "2015-10-30",
   "year": 2015,
@@ -5562,10 +5652,136 @@ window.SP = [
   "title": "Self Portrait With Wood Pecker"
  },
  {
+  "file": "2015/2015-10-29_self_portrait_10.jpg",
+  "date": "2015-10-29",
+  "year": 2015,
+  "title": "Self Portrait 10"
+ },
+ {
+  "file": "2015/2015-10-29_self_portrait_12.jpg",
+  "date": "2015-10-29",
+  "year": 2015,
+  "title": "Self Portrait 12"
+ },
+ {
+  "file": "2015/2015-10-29_self_portrait_14.jpg",
+  "date": "2015-10-29",
+  "year": 2015,
+  "title": "Self Portrait 14"
+ },
+ {
+  "file": "2015/2015-10-29_self_portrait_16.jpg",
+  "date": "2015-10-29",
+  "year": 2015,
+  "title": "Self Portrait 16"
+ },
+ {
+  "file": "2015/2015-10-29_self_portrait_18.jpg",
+  "date": "2015-10-29",
+  "year": 2015,
+  "title": "Self Portrait 18"
+ },
+ {
+  "file": "2015/2015-10-29_self_portrait_2.jpg",
+  "date": "2015-10-29",
+  "year": 2015,
+  "title": "Self Portrait 2"
+ },
+ {
+  "file": "2015/2015-10-29_self_portrait_20.jpg",
+  "date": "2015-10-29",
+  "year": 2015,
+  "title": "Self Portrait 20"
+ },
+ {
+  "file": "2015/2015-10-29_self_portrait_22.jpg",
+  "date": "2015-10-29",
+  "year": 2015,
+  "title": "Self Portrait 22"
+ },
+ {
+  "file": "2015/2015-10-29_self_portrait_24.jpg",
+  "date": "2015-10-29",
+  "year": 2015,
+  "title": "Self Portrait 24"
+ },
+ {
+  "file": "2015/2015-10-29_self_portrait_26.jpg",
+  "date": "2015-10-29",
+  "year": 2015,
+  "title": "Self Portrait 26"
+ },
+ {
+  "file": "2015/2015-10-29_self_portrait_4.jpg",
+  "date": "2015-10-29",
+  "year": 2015,
+  "title": "Self Portrait 4"
+ },
+ {
+  "file": "2015/2015-10-29_self_portrait_6.jpg",
+  "date": "2015-10-29",
+  "year": 2015,
+  "title": "Self Portrait 6"
+ },
+ {
+  "file": "2015/2015-10-29_self_portrait_8.jpg",
+  "date": "2015-10-29",
+  "year": 2015,
+  "title": "Self Portrait 8"
+ },
+ {
   "file": "2015/2015-10-29_self_portrait_debate_on_tv.jpg",
   "date": "2015-10-29",
   "year": 2015,
   "title": "Self Portrait Debate On Tv"
+ },
+ {
+  "file": "2015/2015-10-28_self_portrait.jpg",
+  "date": "2015-10-28",
+  "year": 2015,
+  "title": "Self Portrait"
+ },
+ {
+  "file": "2015/2015-10-28_self_portrait_3.jpg",
+  "date": "2015-10-28",
+  "year": 2015,
+  "title": "Self Portrait 3"
+ },
+ {
+  "file": "2015/2015-10-28_self_portrait_5.jpg",
+  "date": "2015-10-28",
+  "year": 2015,
+  "title": "Self Portrait 5"
+ },
+ {
+  "file": "2015/2015-10-26_self_portrait_10.jpg",
+  "date": "2015-10-26",
+  "year": 2015,
+  "title": "Self Portrait 10"
+ },
+ {
+  "file": "2015/2015-10-26_self_portrait_12.jpg",
+  "date": "2015-10-26",
+  "year": 2015,
+  "title": "Self Portrait 12"
+ },
+ {
+  "file": "2015/2015-10-26_self_portrait_4.jpg",
+  "date": "2015-10-26",
+  "year": 2015,
+  "title": "Self Portrait 4"
+ },
+ {
+  "file": "2015/2015-10-26_self_portrait_6.jpg",
+  "date": "2015-10-26",
+  "year": 2015,
+  "title": "Self Portrait 6"
+ },
+ {
+  "file": "2015/2015-10-26_self_portrait_8.jpg",
+  "date": "2015-10-26",
+  "year": 2015,
+  "title": "Self Portrait 8"
  },
  {
   "file": "2015/2015-10-26_self_portrait_elevated_highway.jpg",
@@ -5586,10 +5802,52 @@ window.SP = [
   "title": "Self Portrait Towels"
  },
  {
+  "file": "2015/2015-10-25_self_portrait_10.jpg",
+  "date": "2015-10-25",
+  "year": 2015,
+  "title": "Self Portrait 10"
+ },
+ {
+  "file": "2015/2015-10-25_self_portrait_12.jpg",
+  "date": "2015-10-25",
+  "year": 2015,
+  "title": "Self Portrait 12"
+ },
+ {
+  "file": "2015/2015-10-25_self_portrait_2.jpg",
+  "date": "2015-10-25",
+  "year": 2015,
+  "title": "Self Portrait 2"
+ },
+ {
+  "file": "2015/2015-10-25_self_portrait_4.jpg",
+  "date": "2015-10-25",
+  "year": 2015,
+  "title": "Self Portrait 4"
+ },
+ {
+  "file": "2015/2015-10-25_self_portrait_6.jpg",
+  "date": "2015-10-25",
+  "year": 2015,
+  "title": "Self Portrait 6"
+ },
+ {
+  "file": "2015/2015-10-25_self_portrait_8.jpg",
+  "date": "2015-10-25",
+  "year": 2015,
+  "title": "Self Portrait 8"
+ },
+ {
   "file": "2015/2015-10-25_self_portrait_train.jpg",
   "date": "2015-10-25",
   "year": 2015,
   "title": "Self Portrait Train"
+ },
+ {
+  "file": "2015/2015-10-18_self_portrait_2.jpg",
+  "date": "2015-10-18",
+  "year": 2015,
+  "title": "Self Portrait 2"
  },
  {
   "file": "2015/2015-10-18_self_portrait_sky.jpg",
@@ -5598,10 +5856,28 @@ window.SP = [
   "title": "Self Portrait Sky"
  },
  {
+  "file": "2015/2015-10-17_self_portrait_2.jpg",
+  "date": "2015-10-17",
+  "year": 2015,
+  "title": "Self Portrait 2"
+ },
+ {
   "file": "2015/2015-10-17_self_portrait_fall.jpg",
   "date": "2015-10-17",
   "year": 2015,
   "title": "Self Portrait Fall"
+ },
+ {
+  "file": "2015/2015-10-11_self_portrait.jpg",
+  "date": "2015-10-11",
+  "year": 2015,
+  "title": "Self Portrait"
+ },
+ {
+  "file": "2015/2015-10-06_self_portrait_3.jpg",
+  "date": "2015-10-06",
+  "year": 2015,
+  "title": "Self Portrait 3"
  },
  {
   "file": "2015/2015-10-06_self_portrait_jackie.jpg",
@@ -5622,14 +5898,320 @@ window.SP = [
   "title": "Self Portrait Rubber Ducks"
  },
  {
+  "file": "2015/2015-10-03_self_portrait_10.jpg",
+  "date": "2015-10-03",
+  "year": 2015,
+  "title": "Self Portrait 10"
+ },
+ {
+  "file": "2015/2015-10-03_self_portrait_12.jpg",
+  "date": "2015-10-03",
+  "year": 2015,
+  "title": "Self Portrait 12"
+ },
+ {
+  "file": "2015/2015-10-03_self_portrait_14.jpg",
+  "date": "2015-10-03",
+  "year": 2015,
+  "title": "Self Portrait 14"
+ },
+ {
+  "file": "2015/2015-10-03_self_portrait_16.jpg",
+  "date": "2015-10-03",
+  "year": 2015,
+  "title": "Self Portrait 16"
+ },
+ {
+  "file": "2015/2015-10-03_self_portrait_2.jpg",
+  "date": "2015-10-03",
+  "year": 2015,
+  "title": "Self Portrait 2"
+ },
+ {
+  "file": "2015/2015-10-03_self_portrait_4.jpg",
+  "date": "2015-10-03",
+  "year": 2015,
+  "title": "Self Portrait 4"
+ },
+ {
+  "file": "2015/2015-10-03_self_portrait_6.jpg",
+  "date": "2015-10-03",
+  "year": 2015,
+  "title": "Self Portrait 6"
+ },
+ {
+  "file": "2015/2015-10-03_self_portrait_8.jpg",
+  "date": "2015-10-03",
+  "year": 2015,
+  "title": "Self Portrait 8"
+ },
+ {
   "file": "2015/2015-10-03_self_portrait_last_night.jpg",
   "date": "2015-10-03",
   "year": 2015,
   "title": "Self Portrait Last Night"
  },
  {
+  "file": "2015/2015-10-02_self_portrait.jpg",
+  "date": "2015-10-02",
+  "year": 2015,
+  "title": "Self Portrait"
+ },
+ {
+  "file": "2015/2015-10-02_self_portrait_3.jpg",
+  "date": "2015-10-02",
+  "year": 2015,
+  "title": "Self Portrait 3"
+ },
+ {
+  "file": "2015/2015-09-25_self_portrait.jpg",
+  "date": "2015-09-25",
+  "year": 2015,
+  "title": "Self Portrait"
+ },
+ {
+  "file": "2015/2015-09-25_self_portrait_3.jpg",
+  "date": "2015-09-25",
+  "year": 2015,
+  "title": "Self Portrait 3"
+ },
+ {
   "file": "2015/2015-09-24_self_portrait.jpg",
   "date": "2015-09-24",
+  "year": 2015,
+  "title": "Self Portrait"
+ },
+ {
+  "file": "2015/2015-09-24_self_portrait_10.jpg",
+  "date": "2015-09-24",
+  "year": 2015,
+  "title": "Self Portrait 10"
+ },
+ {
+  "file": "2015/2015-09-24_self_portrait_12.jpg",
+  "date": "2015-09-24",
+  "year": 2015,
+  "title": "Self Portrait 12"
+ },
+ {
+  "file": "2015/2015-09-24_self_portrait_14.jpg",
+  "date": "2015-09-24",
+  "year": 2015,
+  "title": "Self Portrait 14"
+ },
+ {
+  "file": "2015/2015-09-24_self_portrait_16.jpg",
+  "date": "2015-09-24",
+  "year": 2015,
+  "title": "Self Portrait 16"
+ },
+ {
+  "file": "2015/2015-09-24_self_portrait_18.jpg",
+  "date": "2015-09-24",
+  "year": 2015,
+  "title": "Self Portrait 18"
+ },
+ {
+  "file": "2015/2015-09-24_self_portrait_2.jpg",
+  "date": "2015-09-24",
+  "year": 2015,
+  "title": "Self Portrait 2"
+ },
+ {
+  "file": "2015/2015-09-24_self_portrait_20.jpg",
+  "date": "2015-09-24",
+  "year": 2015,
+  "title": "Self Portrait 20"
+ },
+ {
+  "file": "2015/2015-09-24_self_portrait_22.jpg",
+  "date": "2015-09-24",
+  "year": 2015,
+  "title": "Self Portrait 22"
+ },
+ {
+  "file": "2015/2015-09-24_self_portrait_24.jpg",
+  "date": "2015-09-24",
+  "year": 2015,
+  "title": "Self Portrait 24"
+ },
+ {
+  "file": "2015/2015-09-24_self_portrait_26.jpg",
+  "date": "2015-09-24",
+  "year": 2015,
+  "title": "Self Portrait 26"
+ },
+ {
+  "file": "2015/2015-09-24_self_portrait_28.jpg",
+  "date": "2015-09-24",
+  "year": 2015,
+  "title": "Self Portrait 28"
+ },
+ {
+  "file": "2015/2015-09-24_self_portrait_4.jpg",
+  "date": "2015-09-24",
+  "year": 2015,
+  "title": "Self Portrait 4"
+ },
+ {
+  "file": "2015/2015-09-24_self_portrait_6.jpg",
+  "date": "2015-09-24",
+  "year": 2015,
+  "title": "Self Portrait 6"
+ },
+ {
+  "file": "2015/2015-09-24_self_portrait_8.jpg",
+  "date": "2015-09-24",
+  "year": 2015,
+  "title": "Self Portrait 8"
+ },
+ {
+  "file": "2015/2015-09-22_self_portrait.jpg",
+  "date": "2015-09-22",
+  "year": 2015,
+  "title": "Self Portrait"
+ },
+ {
+  "file": "2015/2015-09-22_self_portrait_3.jpg",
+  "date": "2015-09-22",
+  "year": 2015,
+  "title": "Self Portrait 3"
+ },
+ {
+  "file": "2015/2015-09-22_self_portrait_5.jpg",
+  "date": "2015-09-22",
+  "year": 2015,
+  "title": "Self Portrait 5"
+ },
+ {
+  "file": "2015/2015-09-21_self_portrait.jpg",
+  "date": "2015-09-21",
+  "year": 2015,
+  "title": "Self Portrait"
+ },
+ {
+  "file": "2015/2015-07-20_self_portrait.jpg",
+  "date": "2015-07-20",
+  "year": 2015,
+  "title": "Self Portrait"
+ },
+ {
+  "file": "2015/2015-07-20_self_portrait_3.jpg",
+  "date": "2015-07-20",
+  "year": 2015,
+  "title": "Self Portrait 3"
+ },
+ {
+  "file": "2015/2015-07-20_self_portrait_5.jpg",
+  "date": "2015-07-20",
+  "year": 2015,
+  "title": "Self Portrait 5"
+ },
+ {
+  "file": "2015/2015-07-18_self_portrait.jpg",
+  "date": "2015-07-18",
+  "year": 2015,
+  "title": "Self Portrait"
+ },
+ {
+  "file": "2015/2015-07-13_self_portrait.jpg",
+  "date": "2015-07-13",
+  "year": 2015,
+  "title": "Self Portrait"
+ },
+ {
+  "file": "2015/2015-07-12_self_portrait.jpg",
+  "date": "2015-07-12",
+  "year": 2015,
+  "title": "Self Portrait"
+ },
+ {
+  "file": "2015/2015-07-12_self_portrait_3.jpg",
+  "date": "2015-07-12",
+  "year": 2015,
+  "title": "Self Portrait 3"
+ },
+ {
+  "file": "2015/2015-07-12_self_portrait_5.jpg",
+  "date": "2015-07-12",
+  "year": 2015,
+  "title": "Self Portrait 5"
+ },
+ {
+  "file": "2015/2015-07-12_self_portrait_7.jpg",
+  "date": "2015-07-12",
+  "year": 2015,
+  "title": "Self Portrait 7"
+ },
+ {
+  "file": "2015/2015-07-12_self_portrait_9.jpg",
+  "date": "2015-07-12",
+  "year": 2015,
+  "title": "Self Portrait 9"
+ },
+ {
+  "file": "2015/2015-06-13_self_portrait.jpg",
+  "date": "2015-06-13",
+  "year": 2015,
+  "title": "Self Portrait"
+ },
+ {
+  "file": "2015/2015-06-13_self_portrait_3.jpg",
+  "date": "2015-06-13",
+  "year": 2015,
+  "title": "Self Portrait 3"
+ },
+ {
+  "file": "2015/2015-06-13_self_portrait_5.jpg",
+  "date": "2015-06-13",
+  "year": 2015,
+  "title": "Self Portrait 5"
+ },
+ {
+  "file": "2015/2015-06-13_self_portrait_7.jpg",
+  "date": "2015-06-13",
+  "year": 2015,
+  "title": "Self Portrait 7"
+ },
+ {
+  "file": "2015/2015-05-15_self_portrait.jpg",
+  "date": "2015-05-15",
+  "year": 2015,
+  "title": "Self Portrait"
+ },
+ {
+  "file": "2015/2015-05-15_self_portrait_3.jpg",
+  "date": "2015-05-15",
+  "year": 2015,
+  "title": "Self Portrait 3"
+ },
+ {
+  "file": "2015/2015-05-15_self_portrait_5.jpg",
+  "date": "2015-05-15",
+  "year": 2015,
+  "title": "Self Portrait 5"
+ },
+ {
+  "file": "2015/2015-05-12_self_portrait.jpg",
+  "date": "2015-05-12",
+  "year": 2015,
+  "title": "Self Portrait"
+ },
+ {
+  "file": "2015/2015-05-12_self_portrait_3.jpg",
+  "date": "2015-05-12",
+  "year": 2015,
+  "title": "Self Portrait 3"
+ },
+ {
+  "file": "2015/2015-05-12_self_portrait_5.jpg",
+  "date": "2015-05-12",
+  "year": 2015,
+  "title": "Self Portrait 5"
+ },
+ {
+  "file": "2015/2015-05-06_self_portrait.jpg",
+  "date": "2015-05-06",
   "year": 2015,
   "title": "Self Portrait"
  },
