@@ -214,12 +214,12 @@
 
 <div class="section-head" id="video">Video</div>
 <div class="grid" id="videoGrid" style="grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));"><!--STATIC-VIDEOS-->
-<a class="tile" href="https://www.youtube.com/watch?v=AWx4d1gxjdw" style="aspect-ratio:16/9"><img src="https://i.ytimg.com/vi/AWx4d1gxjdw/hqdefault.jpg" alt="Infinite Loop: Birds on a Wire — video, 2026-07-09"><div class="label">Infinite Loop: Birds on a Wire</div></a>
-<a class="tile" href="https://www.youtube.com/watch?v=79THSdrSl04" style="aspect-ratio:16/9"><img src="https://i.ytimg.com/vi/79THSdrSl04/hqdefault.jpg" alt="Infinite Loop: Drones Drop Boxes — video, 2026-07-09"><div class="label">Infinite Loop: Drones Drop Boxes</div></a>
-<a class="tile" href="https://www.youtube.com/watch?v=3sDu7YZajOg" style="aspect-ratio:16/9"><img src="https://i.ytimg.com/vi/3sDu7YZajOg/hqdefault.jpg" alt="Emerging Space and Time — video, 2026-07-09"><div class="label">Emerging Space and Time</div></a>
-<a class="tile" href="https://www.youtube.com/watch?v=v1FSCsj6LQk" style="aspect-ratio:16/9"><img src="https://i.ytimg.com/vi/v1FSCsj6LQk/hqdefault.jpg" alt="Frootloop Rollercoaster — video, 2026-07-04"><div class="label">Frootloop Rollercoaster</div></a>
-<a class="tile" href="https://www.youtube.com/watch?v=kg5xyDKZtbY" style="aspect-ratio:16/9"><img src="https://i.ytimg.com/vi/kg5xyDKZtbY/hqdefault.jpg" alt="Frootloop Rollercoaster at the Node — video, 2026-07-04"><div class="label">Frootloop Rollercoaster at the Node</div></a>
-<a class="tile" href="https://www.youtube.com/watch?v=mvPmOY5q8oc" style="aspect-ratio:16/9"><img src="https://i.ytimg.com/vi/mvPmOY5q8oc/hqdefault.jpg" alt="Froot Loop Roller Coaster (Short) — video, 2026-07-04"><div class="label">Froot Loop Roller Coaster (Short)</div></a>
+<a class="tile" href="https://www.youtube.com/watch?v=AWx4d1gxjdw" style="aspect-ratio:16/9"><img src="https://i.ytimg.com/vi/AWx4d1gxjdw/hqdefault.jpg" alt="Infinite Loop: Birds on a Wire — video, 2026-07-09"><div class="play">▶ PLAY</div><div class="label">Infinite Loop: Birds on a Wire</div></a>
+<a class="tile" href="https://www.youtube.com/watch?v=79THSdrSl04" style="aspect-ratio:16/9"><img src="https://i.ytimg.com/vi/79THSdrSl04/hqdefault.jpg" alt="Infinite Loop: Drones Drop Boxes — video, 2026-07-09"><div class="play">▶ PLAY</div><div class="label">Infinite Loop: Drones Drop Boxes</div></a>
+<a class="tile" href="https://www.youtube.com/watch?v=3sDu7YZajOg" style="aspect-ratio:16/9"><img src="https://i.ytimg.com/vi/3sDu7YZajOg/hqdefault.jpg" alt="Emerging Space and Time — video, 2026-07-09"><div class="play">▶ PLAY</div><div class="label">Emerging Space and Time</div></a>
+<a class="tile" href="https://www.youtube.com/watch?v=v1FSCsj6LQk" style="aspect-ratio:16/9"><img src="https://i.ytimg.com/vi/v1FSCsj6LQk/hqdefault.jpg" alt="Frootloop Rollercoaster — video, 2026-07-04"><div class="play">▶ PLAY</div><div class="label">Frootloop Rollercoaster</div></a>
+<a class="tile" href="https://www.youtube.com/watch?v=kg5xyDKZtbY" style="aspect-ratio:16/9"><img src="https://i.ytimg.com/vi/kg5xyDKZtbY/hqdefault.jpg" alt="Frootloop Rollercoaster at the Node — video, 2026-07-04"><div class="play">▶ PLAY</div><div class="label">Frootloop Rollercoaster at the Node</div></a>
+<a class="tile" href="https://www.youtube.com/watch?v=mvPmOY5q8oc" style="aspect-ratio:16/9"><img src="https://i.ytimg.com/vi/mvPmOY5q8oc/hqdefault.jpg" alt="Froot Loop Roller Coaster (Short) — video, 2026-07-04"><div class="play">▶ PLAY</div><div class="label">Froot Loop Roller Coaster (Short)</div></a>
 <!--/STATIC-VIDEOS--></div>
 
 <div class="section-head" id="about">About</div>
@@ -275,39 +275,57 @@
     filtersEl.appendChild(b);
   });
 
-  // --- image grid ---
+  // --- image grid: hydrate the server-rendered tiles ---
+  // The build script bakes the grid into the HTML (same order as the
+  // manifest), so images paint before any JS runs. JS only attaches
+  // behavior; it rebuilds the grid only if the static markup is missing.
   const gridEl = document.getElementById('grid');
-  let visible = [];
-  function renderGrid() {
-    visible = activeSeries === 'ALL' ? images : images.filter(w => w.series === activeSeries);
+  let tiles = [...gridEl.querySelectorAll('a.tile')];
+  if (tiles.length !== images.length) {
     gridEl.innerHTML = '';
-    visible.forEach((w, i) => {
-      const t = document.createElement('button');
+    tiles = images.map(w => {
+      const t = document.createElement('a');
       t.className = 'tile';
-      t.innerHTML = `<img src="${w.file}" alt="${w.title}" loading="lazy">
-                     <div class="label">${w.title}</div>`;
-      t.onclick = () => openLightbox(i);
+      t.href = w.file;
+      t.innerHTML = `<img src="${w.file}" alt="${w.title}" loading="lazy"><div class="label">${w.title}</div>`;
       gridEl.appendChild(t);
+      return t;
     });
   }
-  renderGrid();
+  let visible = images.slice();
+  tiles.forEach((t, i) => t.addEventListener('click', e => {
+    e.preventDefault();
+    openLightbox(visible.indexOf(images[i]));
+  }));
+  function renderGrid() {
+    visible = [];
+    tiles.forEach((t, i) => {
+      const w = images[i];
+      const show = activeSeries === 'ALL' || w.series === activeSeries;
+      t.style.display = show ? '' : 'none';
+      if (show) visible.push(w);
+    });
+  }
 
-  // --- video grid ---
+  // --- video grid: hydrate likewise ---
   const videoGridEl = document.getElementById('videoGrid');
-  videoGridEl.innerHTML = '';
-  videos.forEach(w => {
-    const t = document.createElement('div');
-    t.className = 'tile';
-    t.style.aspectRatio = '16/9';
-    const thumb = w.youtube
-      ? `<img src="https://i.ytimg.com/vi/${w.youtube}/hqdefault.jpg" alt="${w.title}">`
-      : `<video src="${w.file}" muted preload="metadata"></video>`;
-    t.innerHTML = `${thumb}
-                   <div class="play">▶ PLAY</div>
-                   <div class="label">${w.title}</div>`;
-    t.onclick = () => openVideoLightbox(w);
-    videoGridEl.appendChild(t);
-  });
+  let vtiles = [...videoGridEl.querySelectorAll('a.tile')];
+  if (vtiles.length !== videos.length) {
+    videoGridEl.innerHTML = '';
+    vtiles = videos.map(w => {
+      const t = document.createElement('a');
+      t.className = 'tile';
+      t.href = w.youtube ? 'https://www.youtube.com/watch?v=' + w.youtube : w.file;
+      t.style.aspectRatio = '16/9';
+      t.innerHTML = `<img src="https://i.ytimg.com/vi/${w.youtube}/hqdefault.jpg" alt="${w.title}"><div class="play">▶ PLAY</div><div class="label">${w.title}</div>`;
+      videoGridEl.appendChild(t);
+      return t;
+    });
+  }
+  vtiles.forEach((t, i) => t.addEventListener('click', e => {
+    e.preventDefault();
+    openVideoLightbox(videos[i]);
+  }));
 
   // --- lightbox ---
   const lb = document.getElementById('lightbox');

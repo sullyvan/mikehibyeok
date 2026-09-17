@@ -126,6 +126,7 @@ def write_static_grid(manifest):
         f'<a class="tile" href="https://www.youtube.com/watch?v={w["youtube"]}" '
         f'style="aspect-ratio:16/9">'
         f'<img src="https://i.ytimg.com/vi/{w["youtube"]}/hqdefault.jpg" alt="{esc(w["title"])} — video, {w["date"]}">'
+        f'<div class="play">▶ PLAY</div>'
         f'<div class="label">{esc(w["title"])}</div></a>\n'
         for w in manifest if w.get("type") == "video" and w.get("youtube")
     )
