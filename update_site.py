@@ -138,6 +138,35 @@ def write_static_grid(manifest):
     open(idx_path, "w").write(html)
 
 
+def write_works_txt(manifest):
+    """Plain-text catalog at /works.txt — for AI assistants and other fetchers
+    whose HTML-to-text extraction drops image tags. Nothing here to strip."""
+    base = "https://mikehibyeok.com"
+    lines = [
+        "MIKEHIBYEOK — complete works catalog",
+        "Site: " + base + "/",
+        "Format: date | title | series | process | direct URL",
+        "",
+        "== WORKS ==",
+    ]
+    for w in manifest:
+        if w.get("type") == "image":
+            lines.append(f"{w['date']} | {w['title']} | {w['series']} | {w['process']} | {base}/{w['file']}")
+        elif w.get("youtube"):
+            lines.append(f"{w['date']} | {w['title']} | {w['series']} | video | https://www.youtube.com/watch?v={w['youtube']}")
+
+    sp_path = os.path.join(SITE, "selfportraits", "sp_manifest.js")
+    if os.path.exists(sp_path):
+        raw = open(sp_path).read()
+        sp = sorted(json.loads(raw[raw.index("["):raw.rindex("]") + 1]),
+                    key=lambda w: w["date"], reverse=True)
+        lines += ["", f"== SELF PORTRAITS ({len(sp)} works, {base}/selfportraits/) ==",
+                  "A daily self-portrait photography practice focused on hair, 2014 to now.", ""]
+        lines += [f"{w['date']} | {w['title']} | {base}/selfportraits/{w['file']}" for w in sp]
+
+    open(os.path.join(SITE, "works.txt"), "w").write("\n".join(lines) + "\n")
+
+
 def main():
     manifest = json.load(open(MANIFEST)) if os.path.exists(MANIFEST) else []
     known = {w["file"].split("/")[-1] for w in manifest}
@@ -180,6 +209,7 @@ def main():
 
     write_seo_files(manifest)
     write_static_grid(manifest)
+    write_works_txt(manifest)
 
     print(f"{len(added)} new work(s) added, {len(manifest)} total on site.")
     for a in added:
