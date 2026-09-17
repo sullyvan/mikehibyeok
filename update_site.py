@@ -61,6 +61,50 @@ def make_entry(webfile):
     }
 
 
+def write_seo_files(manifest):
+    """Regenerate sitemap.xml (with image entries for search) and robots.txt."""
+    base = "https://mikehibyeok.com"
+
+    def esc(s):
+        return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+    def image_block(url, title):
+        return ("  <image:image>\n"
+                f"    <image:loc>{esc(url)}</image:loc>\n"
+                f"    <image:title>{esc(title)}</image:title>\n"
+                "  </image:image>\n")
+
+    main_images = "".join(
+        image_block(f"{base}/{w['file']}", w["title"])
+        for w in manifest if w.get("type") == "image"
+    )
+    main_lastmod = max((w["date"] for w in manifest), default="2026-01-01")
+
+    sp_images, sp_lastmod = "", "2026-01-01"
+    sp_path = os.path.join(SITE, "selfportraits", "sp_manifest.js")
+    if os.path.exists(sp_path):
+        raw = open(sp_path).read()
+        sp = json.loads(raw[raw.index("["):raw.rindex("]") + 1])
+        sp_lastmod = max((w["date"] for w in sp), default=sp_lastmod)
+        # Google reads at most 1,000 images per page entry — keep the newest
+        sp = sorted(sp, key=lambda w: w["date"], reverse=True)[:1000]
+        sp_images = "".join(
+            image_block(f"{base}/selfportraits/{w['file']}", f"{w['title']} ({w['date']})")
+            for w in sp
+        )
+
+    with open(os.path.join(SITE, "sitemap.xml"), "w") as f:
+        f.write('<?xml version="1.0" encoding="UTF-8"?>\n'
+                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
+                '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
+                f"<url>\n  <loc>{base}/</loc>\n  <lastmod>{main_lastmod}</lastmod>\n{main_images}</url>\n"
+                f"<url>\n  <loc>{base}/selfportraits/</loc>\n  <lastmod>{sp_lastmod}</lastmod>\n{sp_images}</url>\n"
+                "</urlset>\n")
+
+    with open(os.path.join(SITE, "robots.txt"), "w") as f:
+        f.write("User-agent: *\nAllow: /\n\nSitemap: https://mikehibyeok.com/sitemap.xml\n")
+
+
 def main():
     manifest = json.load(open(MANIFEST)) if os.path.exists(MANIFEST) else []
     known = {w["file"].split("/")[-1] for w in manifest}
@@ -100,6 +144,8 @@ def main():
     json.dump(manifest, open(MANIFEST, "w"), indent=2)
     with open(os.path.join(SITE, "manifest.js"), "w") as f:
         f.write("window.WORKS = " + json.dumps(manifest, indent=2) + ";\n")
+
+    write_seo_files(manifest)
 
     print(f"{len(added)} new work(s) added, {len(manifest)} total on site.")
     for a in added:
