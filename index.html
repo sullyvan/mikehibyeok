@@ -74,6 +74,7 @@
     display: grid; gap: 4px; padding: 16px 24px 60px;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   }
+  a.tile { display: block; text-decoration: none; }
   .tile {
     position: relative; aspect-ratio: 1/1; overflow: hidden;
     background: var(--panel); cursor: pointer; border: 0; padding: 0;
@@ -175,10 +176,51 @@
 
 <div class="filters" id="filters"></div>
 
-<div class="grid" id="grid"></div>
+<div class="grid" id="grid"><!--STATIC-GRID-->
+<a class="tile" href="images/2026-07-09-lacma-data.jpg"><img src="images/2026-07-09-lacma-data.jpg" alt="LACMA Data — LACMA, 2026-07-09, AI-generated" loading="lazy"><div class="label">LACMA Data</div></a>
+<a class="tile" href="images/2026-07-04-ai-slop.jpg"><img src="images/2026-07-04-ai-slop.jpg" alt="AI Slop — AI Slop, 2026-07-04, AI-generated" loading="lazy"><div class="label">AI Slop</div></a>
+<a class="tile" href="images/2026-07-04-ai-sloppification.jpg"><img src="images/2026-07-04-ai-sloppification.jpg" alt="AI Sloppification — AI Slop, 2026-07-04, AI-generated" loading="lazy"><div class="label">AI Sloppification</div></a>
+<a class="tile" href="images/2026-07-04-ai-sloppixel.jpg"><img src="images/2026-07-04-ai-sloppixel.jpg" alt="AI Sloppixel — AI Slop, 2026-07-04, AI-generated" loading="lazy"><div class="label">AI Sloppixel</div></a>
+<a class="tile" href="images/2026-07-04-aislop-logo.jpg"><img src="images/2026-07-04-aislop-logo.jpg" alt="Aislop Logo — AI Slop, 2026-07-04, AI-generated" loading="lazy"><div class="label">Aislop Logo</div></a>
+<a class="tile" href="images/2026-07-04-bio-diverse1.jpg"><img src="images/2026-07-04-bio-diverse1.jpg" alt="Bio Diverse 1 — Bio Diverse, 2026-07-04, AI-generated" loading="lazy"><div class="label">Bio Diverse 1</div></a>
+<a class="tile" href="images/2026-07-04-bio-diverse2.jpg"><img src="images/2026-07-04-bio-diverse2.jpg" alt="Bio Diverse 2 — Bio Diverse, 2026-07-04, AI-generated" loading="lazy"><div class="label">Bio Diverse 2</div></a>
+<a class="tile" href="images/2026-07-04-bio-diverse3.jpg"><img src="images/2026-07-04-bio-diverse3.jpg" alt="Bio Diverse 3 — Bio Diverse, 2026-07-04, AI-generated" loading="lazy"><div class="label">Bio Diverse 3</div></a>
+<a class="tile" href="images/2026-07-04-bio-diverse4.jpg"><img src="images/2026-07-04-bio-diverse4.jpg" alt="Bio Diverse 4 — Bio Diverse, 2026-07-04, AI-generated" loading="lazy"><div class="label">Bio Diverse 4</div></a>
+<a class="tile" href="images/2026-07-04-comic-kwame.jpg"><img src="images/2026-07-04-comic-kwame.jpg" alt="Comic Kwame — Comics, 2026-07-04, AI-generated" loading="lazy"><div class="label">Comic Kwame</div></a>
+<a class="tile" href="images/2026-07-04-eaas-bus.jpg"><img src="images/2026-07-04-eaas-bus.jpg" alt="EAAS Bus — EAAS, 2026-07-04, AI-generated" loading="lazy"><div class="label">EAAS Bus</div></a>
+<a class="tile" href="images/2026-07-04-eaas-butter.jpg"><img src="images/2026-07-04-eaas-butter.jpg" alt="EAAS Butter — EAAS, 2026-07-04, AI-generated" loading="lazy"><div class="label">EAAS Butter</div></a>
+<a class="tile" href="images/2026-07-04-eaas-deepspace.jpg"><img src="images/2026-07-04-eaas-deepspace.jpg" alt="EAAS Deepspace — EAAS, 2026-07-04, AI-generated" loading="lazy"><div class="label">EAAS Deepspace</div></a>
+<a class="tile" href="images/2026-07-04-eaas-display.jpg"><img src="images/2026-07-04-eaas-display.jpg" alt="EAAS Display — EAAS, 2026-07-04, AI-generated" loading="lazy"><div class="label">EAAS Display</div></a>
+<a class="tile" href="images/2026-07-04-eaas-god.jpg"><img src="images/2026-07-04-eaas-god.jpg" alt="EAAS God — EAAS, 2026-07-04, AI-generated" loading="lazy"><div class="label">EAAS God</div></a>
+<a class="tile" href="images/2026-07-04-eaas-goddess.jpg"><img src="images/2026-07-04-eaas-goddess.jpg" alt="EAAS Goddess — EAAS, 2026-07-04, AI-generated" loading="lazy"><div class="label">EAAS Goddess</div></a>
+<a class="tile" href="images/2026-07-04-eaas-guide.jpg"><img src="images/2026-07-04-eaas-guide.jpg" alt="EAAS Guide — EAAS, 2026-07-04, AI-generated" loading="lazy"><div class="label">EAAS Guide</div></a>
+<a class="tile" href="images/2026-07-04-eaas-soup.jpg"><img src="images/2026-07-04-eaas-soup.jpg" alt="EAAS Soup — EAAS, 2026-07-04, AI-generated" loading="lazy"><div class="label">EAAS Soup</div></a>
+<a class="tile" href="images/2026-07-04-eaas-spacecans.jpg"><img src="images/2026-07-04-eaas-spacecans.jpg" alt="EAAS Spacecans — EAAS, 2026-07-04, AI-generated" loading="lazy"><div class="label">EAAS Spacecans</div></a>
+<a class="tile" href="images/2026-07-04-eaas-spacetime.jpg"><img src="images/2026-07-04-eaas-spacetime.jpg" alt="EAAS Spacetime — EAAS, 2026-07-04, AI-generated" loading="lazy"><div class="label">EAAS Spacetime</div></a>
+<a class="tile" href="images/2026-07-04-frootloop-wall.jpg"><img src="images/2026-07-04-frootloop-wall.jpg" alt="Frootloop Wall — Frootloop, 2026-07-04, AI-generated" loading="lazy"><div class="label">Frootloop Wall</div></a>
+<a class="tile" href="images/2026-07-04-hair-defeat.jpg"><img src="images/2026-07-04-hair-defeat.jpg" alt="Hair Defeat — Hair, 2026-07-04, AI-generated" loading="lazy"><div class="label">Hair Defeat</div></a>
+<a class="tile" href="images/2026-07-04-hair-defeatgreen.jpg"><img src="images/2026-07-04-hair-defeatgreen.jpg" alt="Hair Defeatgreen — Hair, 2026-07-04, AI-generated" loading="lazy"><div class="label">Hair Defeatgreen</div></a>
+<a class="tile" href="images/2026-07-04-impasto-iphone1.jpg"><img src="images/2026-07-04-impasto-iphone1.jpg" alt="Impasto iPhone 1 — Impasto, 2026-07-04, AI-generated" loading="lazy"><div class="label">Impasto iPhone 1</div></a>
+<a class="tile" href="images/2026-07-04-impasto-iphone2.jpg"><img src="images/2026-07-04-impasto-iphone2.jpg" alt="Impasto iPhone 2 — Impasto, 2026-07-04, AI-generated" loading="lazy"><div class="label">Impasto iPhone 2</div></a>
+<a class="tile" href="images/2026-07-04-impasto-iphone3.jpg"><img src="images/2026-07-04-impasto-iphone3.jpg" alt="Impasto iPhone 3 — Impasto, 2026-07-04, AI-generated" loading="lazy"><div class="label">Impasto iPhone 3</div></a>
+<a class="tile" href="images/2026-07-04-infinite-frootpower.jpg"><img src="images/2026-07-04-infinite-frootpower.jpg" alt="Infinite Frootpower — Frootloop, 2026-07-04, AI-generated" loading="lazy"><div class="label">Infinite Frootpower</div></a>
+<a class="tile" href="images/2026-07-04-joejim-slop.jpg"><img src="images/2026-07-04-joejim-slop.jpg" alt="Joejim Slop — AI Slop, 2026-07-04, AI-generated" loading="lazy"><div class="label">Joejim Slop</div></a>
+<a class="tile" href="images/2026-07-04-lacma-birdseye.jpg"><img src="images/2026-07-04-lacma-birdseye.jpg" alt="LACMA Birdseye — LACMA, 2026-07-04, AI-generated" loading="lazy"><div class="label">LACMA Birdseye</div></a>
+<a class="tile" href="images/2026-07-04-lacma-discrete.jpg"><img src="images/2026-07-04-lacma-discrete.jpg" alt="LACMA Discrete — LACMA, 2026-07-04, AI-generated" loading="lazy"><div class="label">LACMA Discrete</div></a>
+<a class="tile" href="images/2026-07-04-msu-judge.jpg"><img src="images/2026-07-04-msu-judge.jpg" alt="MSU Judge — MSU, 2026-07-04, hybrid" loading="lazy"><div class="label">MSU Judge</div></a>
+<a class="tile" href="images/2026-07-04-node-frootloop.jpg"><img src="images/2026-07-04-node-frootloop.jpg" alt="Node Frootloop — Frootloop, 2026-07-04, AI-generated" loading="lazy"><div class="label">Node Frootloop</div></a>
+<a class="tile" href="images/2024-04-19-selfportrait-overpass.jpg"><img src="images/2024-04-19-selfportrait-overpass.jpg" alt="Self Portrait: Overpass — Hair, 2024-04-19, handmade" loading="lazy"><div class="label">Self Portrait: Overpass</div></a>
+<!--/STATIC-GRID--></div>
 
 <div class="section-head" id="video">Video</div>
-<div class="grid" id="videoGrid" style="grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));"></div>
+<div class="grid" id="videoGrid" style="grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));"><!--STATIC-VIDEOS-->
+<a class="tile" href="https://www.youtube.com/watch?v=AWx4d1gxjdw" style="aspect-ratio:16/9"><img src="https://i.ytimg.com/vi/AWx4d1gxjdw/hqdefault.jpg" alt="Infinite Loop: Birds on a Wire — video, 2026-07-09"><div class="label">Infinite Loop: Birds on a Wire</div></a>
+<a class="tile" href="https://www.youtube.com/watch?v=79THSdrSl04" style="aspect-ratio:16/9"><img src="https://i.ytimg.com/vi/79THSdrSl04/hqdefault.jpg" alt="Infinite Loop: Drones Drop Boxes — video, 2026-07-09"><div class="label">Infinite Loop: Drones Drop Boxes</div></a>
+<a class="tile" href="https://www.youtube.com/watch?v=3sDu7YZajOg" style="aspect-ratio:16/9"><img src="https://i.ytimg.com/vi/3sDu7YZajOg/hqdefault.jpg" alt="Emerging Space and Time — video, 2026-07-09"><div class="label">Emerging Space and Time</div></a>
+<a class="tile" href="https://www.youtube.com/watch?v=v1FSCsj6LQk" style="aspect-ratio:16/9"><img src="https://i.ytimg.com/vi/v1FSCsj6LQk/hqdefault.jpg" alt="Frootloop Rollercoaster — video, 2026-07-04"><div class="label">Frootloop Rollercoaster</div></a>
+<a class="tile" href="https://www.youtube.com/watch?v=kg5xyDKZtbY" style="aspect-ratio:16/9"><img src="https://i.ytimg.com/vi/kg5xyDKZtbY/hqdefault.jpg" alt="Frootloop Rollercoaster at the Node — video, 2026-07-04"><div class="label">Frootloop Rollercoaster at the Node</div></a>
+<a class="tile" href="https://www.youtube.com/watch?v=mvPmOY5q8oc" style="aspect-ratio:16/9"><img src="https://i.ytimg.com/vi/mvPmOY5q8oc/hqdefault.jpg" alt="Froot Loop Roller Coaster (Short) — video, 2026-07-04"><div class="label">Froot Loop Roller Coaster (Short)</div></a>
+<!--/STATIC-VIDEOS--></div>
 
 <div class="section-head" id="about">About</div>
 <div class="about">
@@ -252,6 +294,7 @@
 
   // --- video grid ---
   const videoGridEl = document.getElementById('videoGrid');
+  videoGridEl.innerHTML = '';
   videos.forEach(w => {
     const t = document.createElement('div');
     t.className = 'tile';

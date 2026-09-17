@@ -105,6 +105,39 @@ def write_seo_files(manifest):
         f.write("User-agent: *\nAllow: /\n\nSitemap: https://mikehibyeok.com/sitemap.xml\n")
 
 
+def write_static_grid(manifest):
+    """Bake the gallery into index.html so no-JS readers (AI fetchers, scrapers,
+    social preview bots) see every work. The page JS re-renders the same grid on
+    load, so browser visitors notice nothing."""
+    idx_path = os.path.join(SITE, "index.html")
+    html = open(idx_path).read()
+
+    def esc(s):
+        return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+
+    tiles = "".join(
+        f'<a class="tile" href="{w["file"]}">'
+        f'<img src="{w["file"]}" alt="{esc(w["title"])} — {w["series"]}, {w["date"]}, '
+        f'{"AI-generated" if w["process"] == "ai" else w["process"]}" loading="lazy">'
+        f'<div class="label">{esc(w["title"])}</div></a>\n'
+        for w in manifest if w.get("type") == "image"
+    )
+    vids = "".join(
+        f'<a class="tile" href="https://www.youtube.com/watch?v={w["youtube"]}" '
+        f'style="aspect-ratio:16/9">'
+        f'<img src="https://i.ytimg.com/vi/{w["youtube"]}/hqdefault.jpg" alt="{esc(w["title"])} — video, {w["date"]}">'
+        f'<div class="label">{esc(w["title"])}</div></a>\n'
+        for w in manifest if w.get("type") == "video" and w.get("youtube")
+    )
+
+    for start, end, body in (("<!--STATIC-GRID-->", "<!--/STATIC-GRID-->", tiles),
+                             ("<!--STATIC-VIDEOS-->", "<!--/STATIC-VIDEOS-->", vids)):
+        i, j = html.index(start) + len(start), html.index(end)
+        html = html[:i] + "\n" + body + html[j:]
+
+    open(idx_path, "w").write(html)
+
+
 def main():
     manifest = json.load(open(MANIFEST)) if os.path.exists(MANIFEST) else []
     known = {w["file"].split("/")[-1] for w in manifest}
@@ -146,6 +179,7 @@ def main():
         f.write("window.WORKS = " + json.dumps(manifest, indent=2) + ";\n")
 
     write_seo_files(manifest)
+    write_static_grid(manifest)
 
     print(f"{len(added)} new work(s) added, {len(manifest)} total on site.")
     for a in added:
