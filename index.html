@@ -166,6 +166,7 @@
   <a class="wordmark" href="#top">MIKEHI<span>BYEOK</span></a>
   <nav>
     <a href="#work">WORK</a>
+    <a href="#top" onclick="filterSeries('Street View Remix')">STREET REMIX</a>
     <a href="selfportraits/">SELF PORTRAITS</a>
     <a href="#video">VIDEO</a>
     <a href="#about">ABOUT</a>
@@ -180,6 +181,13 @@
 <div class="filters" id="filters"></div>
 
 <div class="grid" id="grid"><!--STATIC-GRID-->
+<a class="tile" href="images/2026-10-19-remix-harvesting-the-museum.jpg"><img src="images/2026-10-19-remix-harvesting-the-museum.jpg" alt="Harvesting the Museum — Street View Remix, 2026-10-19, hybrid" loading="lazy"><div class="label">Harvesting the Museum</div></a>
+<a class="tile" href="images/2026-10-19-remix-overwhelmed-by-the-algorithm.jpg"><img src="images/2026-10-19-remix-overwhelmed-by-the-algorithm.jpg" alt="Overwhelmed by the Algorithm — Street View Remix, 2026-10-19, hybrid" loading="lazy"><div class="label">Overwhelmed by the Algorithm</div></a>
+<a class="tile" href="images/2026-10-19-remix-so-algorithmic-antietam-ave.jpg"><img src="images/2026-10-19-remix-so-algorithmic-antietam-ave.jpg" alt="So Algorithmic — Antietam Ave — Street View Remix, 2026-10-19, hybrid" loading="lazy"><div class="label">So Algorithmic — Antietam Ave</div></a>
+<a class="tile" href="images/2026-10-19-remix-so-algorithmic-street-art.jpg"><img src="images/2026-10-19-remix-so-algorithmic-street-art.jpg" alt="So Algorithmic — Street Art — Street View Remix, 2026-10-19, hybrid" loading="lazy"><div class="label">So Algorithmic — Street Art</div></a>
+<a class="tile" href="images/2026-10-19-remix-figures-savoyardes-rue-de-la-poste.jpg"><img src="images/2026-10-19-remix-figures-savoyardes-rue-de-la-poste.jpg" alt="Figures Savoyardes — Rue de la Poste — Street View Remix, 2026-10-19, hybrid" loading="lazy"><div class="label">Figures Savoyardes — Rue de la Poste</div></a>
+<a class="tile" href="images/2026-10-19-remix-skier-rooster-quartier-alpin.jpg"><img src="images/2026-10-19-remix-skier-rooster-quartier-alpin.jpg" alt="Skier Rooster — Quartier Alpin — Street View Remix, 2026-10-19, hybrid" loading="lazy"><div class="label">Skier Rooster — Quartier Alpin</div></a>
+<a class="tile" href="images/2026-10-19-remix-so-algorithmic-place-de-l-eglise.jpg"><img src="images/2026-10-19-remix-so-algorithmic-place-de-l-eglise.jpg" alt="So Algorithmic — Place de l'Église — Street View Remix, 2026-10-19, hybrid" loading="lazy"><div class="label">So Algorithmic — Place de l'Église</div></a>
 <a class="tile" href="images/2026-07-09-lacma-data.jpg"><img src="images/2026-07-09-lacma-data.jpg" alt="LACMA Data — LACMA, 2026-07-09, AI-generated" loading="lazy"><div class="label">LACMA Data</div></a>
 <a class="tile" href="images/2026-07-04-ai-slop.jpg"><img src="images/2026-07-04-ai-slop.jpg" alt="AI Slop — AI Slop, 2026-07-04, AI-generated" loading="lazy"><div class="label">AI Slop</div></a>
 <a class="tile" href="images/2026-07-04-ai-sloppification.jpg"><img src="images/2026-07-04-ai-sloppification.jpg" alt="AI Sloppification — AI Slop, 2026-07-04, AI-generated" loading="lazy"><div class="label">AI Sloppification</div></a>
@@ -339,6 +347,13 @@
       t.style.display = show ? '' : 'none';
       if (show) visible.push(w);
     });
+  }
+
+  // Nav shortcut: jump to the grid with a series filter active
+  function filterSeries(name) {
+    const chip = [...document.querySelectorAll('.chip')].find(c => c.textContent === name);
+    if (chip) chip.click();
+    document.getElementById('filters').scrollIntoView({ behavior: 'smooth' });
   }
 
   // --- video grid: hydrate likewise ---

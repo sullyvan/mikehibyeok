@@ -3,6 +3,13 @@ Site: https://mikehibyeok.com/
 Format: date | title | series | process | direct URL
 
 == WORKS ==
+2026-10-19 | Harvesting the Museum | Street View Remix | hybrid | https://mikehibyeok.com/images/2026-10-19-remix-harvesting-the-museum.jpg
+2026-10-19 | Overwhelmed by the Algorithm | Street View Remix | hybrid | https://mikehibyeok.com/images/2026-10-19-remix-overwhelmed-by-the-algorithm.jpg
+2026-10-19 | So Algorithmic — Antietam Ave | Street View Remix | hybrid | https://mikehibyeok.com/images/2026-10-19-remix-so-algorithmic-antietam-ave.jpg
+2026-10-19 | So Algorithmic — Street Art | Street View Remix | hybrid | https://mikehibyeok.com/images/2026-10-19-remix-so-algorithmic-street-art.jpg
+2026-10-19 | Figures Savoyardes — Rue de la Poste | Street View Remix | hybrid | https://mikehibyeok.com/images/2026-10-19-remix-figures-savoyardes-rue-de-la-poste.jpg
+2026-10-19 | Skier Rooster — Quartier Alpin | Street View Remix | hybrid | https://mikehibyeok.com/images/2026-10-19-remix-skier-rooster-quartier-alpin.jpg
+2026-10-19 | So Algorithmic — Place de l'Église | Street View Remix | hybrid | https://mikehibyeok.com/images/2026-10-19-remix-so-algorithmic-place-de-l-eglise.jpg
 2026-07-09 | LACMA Data | LACMA | ai | https://mikehibyeok.com/images/2026-07-09-lacma-data.jpg
 2026-07-09 | Infinite Loop: Birds on a Wire | Infinite Loop | video | https://www.youtube.com/watch?v=AWx4d1gxjdw
 2026-07-09 | Infinite Loop: Drones Drop Boxes | Infinite Loop | video | https://www.youtube.com/watch?v=79THSdrSl04

@@ -29,6 +29,7 @@ series_map = [
     (r"impasto", "Impasto"),
     (r"lacma", "LACMA"),
     (r"msu", "MSU"),
+    (r"remix", "Street View Remix"),
 ]
 capfix = {"ai": "AI", "eaas": "EAAS", "lacma": "LACMA", "msu": "MSU", "iphone": "iPhone"}
 

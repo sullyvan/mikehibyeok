@@ -3,7 +3,35 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url>
   <loc>https://mikehibyeok.com/</loc>
-  <lastmod>2026-07-09</lastmod>
+  <lastmod>2026-10-19</lastmod>
+  <image:image>
+    <image:loc>https://mikehibyeok.com/images/2026-10-19-remix-harvesting-the-museum.jpg</image:loc>
+    <image:title>Harvesting the Museum</image:title>
+  </image:image>
+  <image:image>
+    <image:loc>https://mikehibyeok.com/images/2026-10-19-remix-overwhelmed-by-the-algorithm.jpg</image:loc>
+    <image:title>Overwhelmed by the Algorithm</image:title>
+  </image:image>
+  <image:image>
+    <image:loc>https://mikehibyeok.com/images/2026-10-19-remix-so-algorithmic-antietam-ave.jpg</image:loc>
+    <image:title>So Algorithmic — Antietam Ave</image:title>
+  </image:image>
+  <image:image>
+    <image:loc>https://mikehibyeok.com/images/2026-10-19-remix-so-algorithmic-street-art.jpg</image:loc>
+    <image:title>So Algorithmic — Street Art</image:title>
+  </image:image>
+  <image:image>
+    <image:loc>https://mikehibyeok.com/images/2026-10-19-remix-figures-savoyardes-rue-de-la-poste.jpg</image:loc>
+    <image:title>Figures Savoyardes — Rue de la Poste</image:title>
+  </image:image>
+  <image:image>
+    <image:loc>https://mikehibyeok.com/images/2026-10-19-remix-skier-rooster-quartier-alpin.jpg</image:loc>
+    <image:title>Skier Rooster — Quartier Alpin</image:title>
+  </image:image>
+  <image:image>
+    <image:loc>https://mikehibyeok.com/images/2026-10-19-remix-so-algorithmic-place-de-l-eglise.jpg</image:loc>
+    <image:title>So Algorithmic — Place de l'Église</image:title>
+  </image:image>
   <image:image>
     <image:loc>https://mikehibyeok.com/images/2026-07-09-lacma-data.jpg</image:loc>
     <image:title>LACMA Data</image:title>
