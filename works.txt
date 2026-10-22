@@ -33,14 +33,12 @@ Format: date | title | series | process | direct URL
 2026-07-04 | EAAS Soup | EAAS | ai | https://mikehibyeok.com/images/2026-07-04-eaas-soup.jpg
 2026-07-04 | EAAS Spacecans | EAAS | ai | https://mikehibyeok.com/images/2026-07-04-eaas-spacecans.jpg
 2026-07-04 | EAAS Spacetime | EAAS | ai | https://mikehibyeok.com/images/2026-07-04-eaas-spacetime.jpg
-2026-07-04 | Frootloop Wall | Frootloop | ai | https://mikehibyeok.com/images/2026-07-04-frootloop-wall.jpg
-2026-07-04 | Hair Defeat | Hair | ai | https://mikehibyeok.com/images/2026-07-04-hair-defeat.jpg
-2026-07-04 | Hair Defeatgreen | Hair | ai | https://mikehibyeok.com/images/2026-07-04-hair-defeatgreen.jpg
-2026-07-04 | Impasto iPhone 1 | Impasto | ai | https://mikehibyeok.com/images/2026-07-04-impasto-iphone1.jpg
-2026-07-04 | Impasto iPhone 2 | Impasto | ai | https://mikehibyeok.com/images/2026-07-04-impasto-iphone2.jpg
-2026-07-04 | Impasto iPhone 3 | Impasto | ai | https://mikehibyeok.com/images/2026-07-04-impasto-iphone3.jpg
-2026-07-04 | Infinite Frootpower | Frootloop | ai | https://mikehibyeok.com/images/2026-07-04-infinite-frootpower.jpg
-2026-07-04 | Joejim Slop | AI Slop | ai | https://mikehibyeok.com/images/2026-07-04-joejim-slop.jpg
+2026-07-04 | Frootloop Rollercoaster | Frootloop | ai | https://mikehibyeok.com/images/2026-07-04-frootloop-wall.jpg
+2026-07-04 | Hair Defeats Recognition (Green) | Hair | hybrid | https://mikehibyeok.com/images/2026-07-04-hair-defeatgreen.jpg
+2026-07-04 | The Pre-Seen Streets of Brussels II | Pre-Seen Streets | hybrid | https://mikehibyeok.com/images/2026-07-04-impasto-iphone2.jpg
+2026-07-04 | The Pre-Seen Streets of Brussels III | Pre-Seen Streets | hybrid | https://mikehibyeok.com/images/2026-07-04-impasto-iphone3.jpg
+2026-07-04 | Infinite Frootpower | Frootloop | hybrid | https://mikehibyeok.com/images/2026-07-04-infinite-frootpower.jpg
+2026-07-04 | Joe Jim Are in Trouble with the Man! Slop Comics No.1 | AI Slop | ai | https://mikehibyeok.com/images/2026-07-04-joejim-slop.jpg
 2026-07-04 | LACMA Birdseye | LACMA | ai | https://mikehibyeok.com/images/2026-07-04-lacma-birdseye.jpg
 2026-07-04 | LACMA Discrete | LACMA | ai | https://mikehibyeok.com/images/2026-07-04-lacma-discrete.jpg
 2026-07-04 | MSU Judge | MSU | hybrid | https://mikehibyeok.com/images/2026-07-04-msu-judge.jpg
@@ -48,7 +46,9 @@ Format: date | title | series | process | direct URL
 2026-07-04 | Frootloop Rollercoaster | Frootloop | video | https://www.youtube.com/watch?v=v1FSCsj6LQk
 2026-07-04 | Frootloop Rollercoaster at the Node | Frootloop | video | https://www.youtube.com/watch?v=kg5xyDKZtbY
 2026-07-04 | Froot Loop Roller Coaster (Short) | Frootloop | video | https://www.youtube.com/watch?v=mvPmOY5q8oc
-2024-04-19 | Self Portrait: Overpass | Hair | handmade | https://mikehibyeok.com/images/2024-04-19-selfportrait-overpass.jpg
+2026-04-30 | A Street Remembered in Advance | Pre-Seen Streets | hybrid | https://mikehibyeok.com/images/2026-07-04-impasto-iphone1.jpg
+2026-03-01 | Hair Defeats Recognition | Hair | hybrid | https://mikehibyeok.com/images/2026-07-04-hair-defeat.jpg
+2017-09-12 | Self Portrait: Overpass | Hair | handmade | https://mikehibyeok.com/images/2024-04-19-selfportrait-overpass.jpg
 
 == SELF PORTRAITS (1042 works, https://mikehibyeok.com/selfportraits/) ==
 A daily self-portrait photography practice focused on hair, 2014 to now.

@@ -26,7 +26,7 @@ series_map = [
     (r"eaas", "EAAS"),
     (r"frootloop|frootpower", "Frootloop"),
     (r"hair", "Hair"),
-    (r"impasto", "Impasto"),
+    (r"impasto|preseen", "Pre-Seen Streets"),
     (r"lacma", "LACMA"),
     (r"msu", "MSU"),
     (r"remix", "Street View Remix"),

@@ -245,50 +245,34 @@ window.WORKS = [
   {
     "file": "images/2026-07-04-frootloop-wall.jpg",
     "type": "image",
-    "title": "Frootloop Wall",
+    "title": "Frootloop Rollercoaster",
     "date": "2026-07-04",
     "series": "Frootloop",
     "process": "ai"
   },
   {
-    "file": "images/2026-07-04-hair-defeat.jpg",
-    "type": "image",
-    "title": "Hair Defeat",
-    "date": "2026-07-04",
-    "series": "Hair",
-    "process": "ai"
-  },
-  {
     "file": "images/2026-07-04-hair-defeatgreen.jpg",
     "type": "image",
-    "title": "Hair Defeatgreen",
+    "title": "Hair Defeats Recognition (Green)",
     "date": "2026-07-04",
     "series": "Hair",
-    "process": "ai"
-  },
-  {
-    "file": "images/2026-07-04-impasto-iphone1.jpg",
-    "type": "image",
-    "title": "Impasto iPhone 1",
-    "date": "2026-07-04",
-    "series": "Impasto",
-    "process": "ai"
+    "process": "hybrid"
   },
   {
     "file": "images/2026-07-04-impasto-iphone2.jpg",
     "type": "image",
-    "title": "Impasto iPhone 2",
+    "title": "The Pre-Seen Streets of Brussels II",
     "date": "2026-07-04",
-    "series": "Impasto",
-    "process": "ai"
+    "series": "Pre-Seen Streets",
+    "process": "hybrid"
   },
   {
     "file": "images/2026-07-04-impasto-iphone3.jpg",
     "type": "image",
-    "title": "Impasto iPhone 3",
+    "title": "The Pre-Seen Streets of Brussels III",
     "date": "2026-07-04",
-    "series": "Impasto",
-    "process": "ai"
+    "series": "Pre-Seen Streets",
+    "process": "hybrid"
   },
   {
     "file": "images/2026-07-04-infinite-frootpower.jpg",
@@ -296,12 +280,12 @@ window.WORKS = [
     "title": "Infinite Frootpower",
     "date": "2026-07-04",
     "series": "Frootloop",
-    "process": "ai"
+    "process": "hybrid"
   },
   {
     "file": "images/2026-07-04-joejim-slop.jpg",
     "type": "image",
-    "title": "Joejim Slop",
+    "title": "Joe Jim Are in Trouble with the Man! Slop Comics No.1",
     "date": "2026-07-04",
     "series": "AI Slop",
     "process": "ai"
@@ -366,10 +350,26 @@ window.WORKS = [
     "process": "ai"
   },
   {
+    "file": "images/2026-07-04-impasto-iphone1.jpg",
+    "type": "image",
+    "title": "A Street Remembered in Advance",
+    "date": "2026-04-30",
+    "series": "Pre-Seen Streets",
+    "process": "hybrid"
+  },
+  {
+    "file": "images/2026-07-04-hair-defeat.jpg",
+    "type": "image",
+    "title": "Hair Defeats Recognition",
+    "date": "2026-03-01",
+    "series": "Hair",
+    "process": "hybrid"
+  },
+  {
     "file": "images/2024-04-19-selfportrait-overpass.jpg",
     "type": "image",
     "title": "Self Portrait: Overpass",
-    "date": "2024-04-19",
+    "date": "2017-09-12",
     "series": "Hair",
     "process": "handmade"
   }
