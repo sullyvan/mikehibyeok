@@ -104,6 +104,13 @@ def write_seo_files(manifest):
         img = image_block(m.group(1), slug) if m else ""
         mod = _dt.date.fromtimestamp(os.path.getmtime(idx)).isoformat()
         extra += f"<url>\n  <loc>{base}/remix/{slug}/</loc>\n  <lastmod>{mod}</lastmod>\n{img}</url>\n"
+    sel = os.path.join(SITE, "selections", "index.html")
+    if os.path.exists(sel):
+        html = open(sel).read()
+        m = _re.search(r'property="og:image" content="([^"]+)"', html)
+        img = image_block(m.group(1), "Selected Works") if m else ""
+        mod = _dt.date.fromtimestamp(os.path.getmtime(sel)).isoformat()
+        extra += f"<url>\n  <loc>{base}/selections/</loc>\n  <lastmod>{mod}</lastmod>\n{img}</url>\n"
 
     with open(os.path.join(SITE, "sitemap.xml"), "w") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n'
