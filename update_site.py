@@ -94,12 +94,24 @@ def write_seo_files(manifest):
             for w in sp
         )
 
+    # Permalink pages (remix/<slug>/) — printed-QR destinations, must stay indexed
+    import glob, re as _re, datetime as _dt
+    extra = ""
+    for idx in sorted(glob.glob(os.path.join(SITE, "remix", "*", "index.html"))):
+        slug = os.path.basename(os.path.dirname(idx))
+        html = open(idx).read()
+        m = _re.search(r'property="og:image" content="([^"]+)"', html)
+        img = image_block(m.group(1), slug) if m else ""
+        mod = _dt.date.fromtimestamp(os.path.getmtime(idx)).isoformat()
+        extra += f"<url>\n  <loc>{base}/remix/{slug}/</loc>\n  <lastmod>{mod}</lastmod>\n{img}</url>\n"
+
     with open(os.path.join(SITE, "sitemap.xml"), "w") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n'
                 '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
                 '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
                 f"<url>\n  <loc>{base}/</loc>\n  <lastmod>{main_lastmod}</lastmod>\n{main_images}</url>\n"
                 f"<url>\n  <loc>{base}/selfportraits/</loc>\n  <lastmod>{sp_lastmod}</lastmod>\n{sp_images}</url>\n"
+                + extra +
                 "</urlset>\n")
 
     with open(os.path.join(SITE, "robots.txt"), "w") as f:
